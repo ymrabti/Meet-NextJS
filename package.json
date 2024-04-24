@@ -2,7 +2,7 @@
   "name": "next-learn-starter",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "npx next dev -p 5619",
     "build": "next build",
     "start": "next start"
   },
