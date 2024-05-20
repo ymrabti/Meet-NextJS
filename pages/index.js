@@ -27,6 +27,7 @@ export default function Home({ allPostsData, randomuser }) {
             {date}
         </li>
     ));
+    // console.log(randomuser);
     return (
         <Layout home>
             <Head>
@@ -38,10 +39,9 @@ export default function Home({ allPostsData, randomuser }) {
                     (This is a sample website - you’ll be building a site like this on{' '}
                     <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
                 </p>
-                <h1 className={utilStyles.title}>
-                    Read <Link href="/posts/first-post">this page!</Link>
-                </h1>
             </section>
+            <Link href="/posts/pre-rendering">Pre-Rendering</Link><br />
+            <Link href="/posts/ssg-ssr">Server-Side-Rendering</Link><br />
             <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
                 <h2 className={utilStyles.headingLg}>Blog</h2>
                 <ul className={utilStyles.list}>

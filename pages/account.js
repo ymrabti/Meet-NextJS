@@ -14,7 +14,7 @@ export async function getServerSideProps() {
         }
     }
 }
-export default function Account({ randomuser}) {
+export default function Account({ randomuser }) {
     const user = randomuser.results[0];
     return (
         <Layout randomuser={user}>
@@ -28,13 +28,13 @@ export default function Account({ randomuser}) {
                     className={utilStyles.borderCircle}
                     height={144}
                     width={144}
-                    alt={Object.values(user.name).join(' ') }
+                    alt={Object.values(user.name).join(' ')}
                 />
                 <h1 className={utilStyles.heading2Xl}>{Object.values(user.name).join(' ')}</h1>
             </header>
             <h1>Username{' : ' + user.login.username}</h1>
-            <h2>Email{' : '+user.email}</h2>
-            <h2>Age{' : '+user.dob.age}</h2>
+            <h2>Email{' : ' + user.email}</h2>
+            <h2>Age{' : ' + user.dob.age}</h2>
         </Layout>
     )
 }
