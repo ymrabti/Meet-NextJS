@@ -1,23 +1,35 @@
 {
-  "name": "next-learn-starter",
-  "private": false,
-  "scripts": {
-    "dev": "npx next dev -p 5619",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "gray-matter": "^4.0.3",
-    "next": "latest",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.19",
-    "eslint": "9.3.0",
-    "eslint-config-next": "14.2.3",
-    "postcss": "^8.4.38",
-    "sass": "^1.75.0",
-    "tailwindcss": "^3.4.3"
-  }
+    "name": "next-learn-starter",
+    "private": false,
+    "license": "MIT",
+    "scripts": {
+        "predev": "cls",
+        "dev": "npx next dev -p 5619",
+        "build": "next build",
+        "start": "next start"
+    },
+    "dependencies": {
+        "axios": "^1.7.2",
+        "date-fns": "^3.6.0",
+        "gray-matter": "^4.0.3",
+        "next": "14.2.3",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "remark": "^15.0.1",
+        "remark-html": "^16.0.1"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.19",
+        "eslint": "9.3.0",
+        "eslint-config-next": "14.2.3",
+        "postcss": "^8.4.38",
+        "sass": "^1.75.0",
+        "tailwindcss": "^3.4.3"
+    },
+    "browser": {
+        "fs": false,
+        "path": false,
+        "os": false
+    },
+    "packageManager": "yarn@1.22.21+sha1.1959a18351b811cdeedbd484a8f86c3cc3bbaf72"
 }
