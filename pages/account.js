@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import Head from 'next/head'
 import Layout from '../components/layout'
 import Image from 'next/image'
@@ -23,7 +22,8 @@ export default function Account({ randomuser }) {
             </Head>
             <header className={styles.header}>
                 <Image
-                    priority
+                    priority={true}
+                    fetchPriority='auto'
                     src={user.picture.large}
                     className={utilStyles.borderCircle}
                     height={144}
